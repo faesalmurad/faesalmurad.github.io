@@ -1,159 +1,389 @@
 <!DOCTYPE html>
-<html>
-
-<meta http-equiv='cache-control' content='no-cache'>
-<meta http-equiv='expires' content='0'>
-<meta http-equiv='pragma' content='no-cache'>
-
+<html lang="en">
 
 <head>
-  <title>About me - Faesal Murad</title>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Faesal Murad — Software Engineer at Google. Building performant, planet-scale systems for Google Cloud." />
+  <meta name="theme-color" content="#0b0d12" />
+  <meta http-equiv="cache-control" content="no-cache" />
+  <meta http-equiv="expires" content="0" />
+  <meta http-equiv="pragma" content="no-cache" />
+
+  <title>Faesal Murad — Software Engineer @ Google</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 
 <body class="is-preload">
-  <!-- Header -->
-  <header id="header">
-    <div class="inner">
-      <a href="#" class="image avatar"><img src="images/profile_picture.png" alt="" /></a>
-      <h1>
-        Hi! I'm <strong>Faesal</strong>, a Software Engineer at <a href="https://about.google/"><span
-            class="label">Google</span></a>
-        <br />
-      </h1>
-      <br />
-      <p>
-        I currently work on client-side performance optimizations, designing new solutions to improve the
-        latency of Google Cloud.
-        <br />
-      </p>
-      <p>
-        During my first year at Google, I worked as a Software Engineer for the Google Cloud's SRE team, developing
-        planet-scale Infrastructure that supports the industry-leading reliability Google is known for.
-        <br />
-      </p>
-      <p>
-        You can see a comprehensive list of my achievements by viewing my <a href="FaesalMuradResume.pdf"><span
-            class="label">resume</span></a>, or by contacting me using the links at the bottom of the page.
-      </p>
-    </div>
-  </header>
+  <!-- Animated background -->
+  <div class="bg-mesh" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="grid-overlay"></div>
+  </div>
 
-  <!-- Main -->
-  <div id="main">
-    <h1>Recent Projects</h1>
-    <div class="row">
-      <article class="col-6 col-12-xsmall work-item">
-        <a href="https://github.com/faesalm/Loan-Default" class="image fit thumb"><img src="images/thumbs/loans.jpg"
-            alt="" /></a>
-        <h3>Loan Default Risk Analysis</h3>
-        <p>
-          Loan defaults are not only bad for business but are also stressful for the loan taker. Defaulting on a loan
-          not only means the bank lost money, but the client’s credit score has dropped significantly, and it is
-          unlikely a bank will be willing to lend money to the person in the future. If it is possible to predict and
-          maximize the repayment rate of loans, this would be a great benefit to both parties in the exchange.
-        </p>
-        <br />
-        <p>
-          The data for the this project was extracted from Kaggle's <a
-            href="https://www.kaggle.com/c/home-credit-default-risk/overview"><span class="label">Home Credit Default
-              Risk Competition</span></a>. My team applied a variety of advanced algorithms to engineer a machine
-          learning model for predicting loan default risk. Some of the advanced methods used are: Feature Engineering,
-          LightGBM, and using GridSearch for optimization.
-        <div class=""></div>
-        </p>
-        <br />
-        <p>
-          We were able to achieve 75% prediction accuracy in the Kaggle competition, while the first place winner scored
-          80%
-        </p>
-      </article>
-      <article class="col-6 col-12-xsmall work-item">
-        <a href="https://github.com/codeu-spring-2019-team-36/codeu-starter-project" class="image fit thumb"><img
-            src="images/thumbs/CodeU.jpg" alt="" /></a>
-        <h3>Google SPS</h3>
-        <p>
-          Google’s <a href="https://buildyourfuture.withgoogle.com/programs/softwareproductsprint/"><span
-              class="label">Software Product Sprint (SPS)</span></a> is an 11-week invite-only program for
-          high-potential students. During SPS, my team developed a web application for finding compatible roommates
-          using Java, JavaScript, and leveraging Cloud Datastore to store user profiles. We collaborated with Software
-          Engineers at Google to use best practices and overcome challenges.
-        </p>
-        </br>
-        <p>
-          During my Google internship, I served as a panelist for the next iteration of the program to share my journey.
-        </p>
-      </article>
-      <article class="col-6 col-12-xsmall work-item">
-        <a href="https://github.com/faesalm/battlesnake_2019" class="image fit thumb"><img
-            src="images/thumbs/battlesnake.png" alt="" /></a>
-        <h3>BattleSnake</h3>
-        <p>
-          BattleSnake is a national hackathon where developers across Canada
-          form teams to build AI snakes. At every game, a number of snakes
-          compete on the same board, with the winner being the last one
-          standing.
-        </p>
-        <br />
+  <!-- Cursor follower -->
+  <div class="cursor-glow" aria-hidden="true"></div>
 
-        <p>
-          My team's AI was able of defeating multiple competing snakes, as well as a variety of bounty snakes, which are
-          snakes created by industry sponsors.
-        </p>
-        <br />
-        <p>
-          The snake has a variety of game strategies, playing defensively and chasing its tail when the board is
-          crowded, and taking risks when it only a few snakes remain. It also uses graph coloring algorithms to predict
-          if it will get stuck.
-        </p>
-      </article>
-      <article class="col-6 col-12-xsmall work-item">
-        <a href="https://github.com/faesalm/ENGR-120" class="image fit thumb"><img src="images/thumbs/robot.jpg"
-            alt="" /></a>
-        <h3>Engineering Robotics Competition</h3>
-        <p>
-          The Engineering Robotics Competiton is an annual, semester-long competition held for engineering students
-          where the task is given at the start of the semester. For 2019, the task was to create an autonomous robot to
-          tether cables to IR beacons, serving as a prototype for an underwater rover for internet cable tethering.
-        </p>
-        <br />
-        <p>
-          Our robot was the fastest to complete all of the competition tasks. The robot had various optimizations, such
-          as dynamic speed settings based on the distance from the target, as well as adjusting motors unevenly to steer
-          the robot. The robot was programmed using RobotC (a variant of C).
-        </p>
-      </article>
+  <!-- Top navigation -->
+  <nav class="nav" aria-label="Primary">
+    <a href="#top" class="nav-brand">
+      <span class="brand-dot"></span>
+      <span class="brand-text">faesal<span class="brand-accent">.dev</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+        <i class="fas fa-moon" aria-hidden="true"></i>
+      </button>
+      <a href="FaesalMuradResume.pdf" class="btn btn-ghost btn-sm" target="_blank" rel="noopener">
+        <i class="fas fa-file-arrow-down" aria-hidden="true"></i>
+        <span>Resume</span>
+      </a>
     </div>
+  </nav>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-status reveal">
+          <span class="status-dot"></span>
+          <span>Open to interesting conversations</span>
+        </div>
+
+        <h1 class="hero-title reveal">
+          Hi, I'm <span class="grad-text">Faesal</span>.<br />
+          I build software that<br />
+          <span class="rotator">
+            <span class="rotator-track">
+              <span>scales globally.</span>
+              <span>moves fast.</span>
+              <span>just works.</span>
+              <span>scales globally.</span>
+            </span>
+          </span>
+        </h1>
+
+        <p class="hero-sub reveal">
+          Software Engineer at <a class="link-pill" href="https://about.google/" target="_blank" rel="noopener"><i class="fab fa-google" aria-hidden="true"></i><span>Google</span></a>,
+          working on client-side performance for <strong>Google Cloud</strong>. I obsess over latency, reliability, and the small details that make products feel effortless.
+        </p>
+
+        <div class="hero-cta reveal">
+          <a href="#projects" class="btn btn-primary">
+            <span>See my work</span>
+            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+          </a>
+          <a href="#contact" class="btn btn-ghost">
+            <span>Get in touch</span>
+          </a>
+        </div>
+
+        <div class="hero-meta reveal">
+          <div class="meta-item">
+            <span class="meta-num" data-count="5">0</span>
+            <span class="meta-label">Years at Google</span>
+          </div>
+          <div class="meta-divider"></div>
+          <div class="meta-item">
+            <span class="meta-num" data-count="2">0</span>
+            <span class="meta-label">Teams shipped on</span>
+          </div>
+          <div class="meta-divider"></div>
+          <div class="meta-item">
+            <span class="meta-num">∞</span>
+            <span class="meta-label">Cups of coffee</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll down">
+        <span></span>
+      </a>
     </section>
 
-    <!-- Footer -->
-    <footer id="footer">
-      <div class="inner">
-        <ul class="icons">
-          <li>
-            <a href="https://www.linkedin.com/in/faesalmurad/" class="icon brands fa-linkedin"><span
-                class="label">Linkedin</span></a>
-          </li>
-          <li>
-            <a href="https://github.com/faesalm" class="icon brands fa-github"><span class="label">Github</span></a>
-          </li>
-          <li>
-            <a href="mailto:faesalmurad@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a>
-          </li>
-        </ul>
-        Design: <a href="http://html5up.net/"><span class="label">HTML5 UP</span></a>
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="section-head reveal">
+        <span class="eyebrow"><span class="eyebrow-line"></span>About</span>
+        <h2>A quick intro</h2>
       </div>
-    </footer>
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.poptrox.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+      <div class="about-grid">
+        <div class="about-card glass reveal">
+          <div class="about-avatar">
+            <img src="images/profile_picture.png" alt="Faesal Murad" loading="lazy" />
+            <span class="avatar-ring"></span>
+          </div>
+          <h3>Faesal Murad</h3>
+          <p class="about-role">Software Engineer · Google Cloud</p>
+          <ul class="about-tags">
+            <li>Performance</li>
+            <li>Distributed Systems</li>
+            <li>SRE</li>
+            <li>ML</li>
+          </ul>
+          <div class="about-socials">
+            <a href="https://www.linkedin.com/in/faesalmurad/" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/faesalm" aria-label="GitHub" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+            <a href="mailto:faesalmurad@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <div class="about-content reveal">
+          <p class="lede">
+            I'm a software engineer who loves the messy intersection of <em>performance</em>, <em>reliability</em>, and <em>great user experience</em>.
+          </p>
+          <p>
+            Today, I work on client-side performance optimizations at Google Cloud — designing solutions that shave milliseconds off latency for developers around the world. Before that, I was on Google Cloud's SRE team, building planet-scale infrastructure that quietly powers a huge slice of the internet.
+          </p>
+          <p>
+            Outside of work, I'm usually exploring something new: tinkering with side projects, reading about systems design, or hunting down the perfect cup of coffee. If you're working on something interesting, I'd love to hear about it.
+          </p>
+
+          <div class="about-cta">
+            <a href="FaesalMuradResume.pdf" class="btn btn-primary btn-sm" target="_blank" rel="noopener">
+              <i class="fas fa-file-arrow-down"></i>
+              <span>Download résumé</span>
+            </a>
+            <a href="https://www.linkedin.com/in/faesalmurad/" class="btn btn-ghost btn-sm" target="_blank" rel="noopener">
+              <i class="fab fa-linkedin-in"></i>
+              <span>Connect on LinkedIn</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills / Stack -->
+    <section id="skills" class="section">
+      <div class="section-head reveal">
+        <span class="eyebrow"><span class="eyebrow-line"></span>Stack</span>
+        <h2>Tools I reach for</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card glass reveal">
+          <div class="skill-icon"><i class="fas fa-code"></i></div>
+          <h4>Languages</h4>
+          <ul>
+            <li>Java</li><li>C++</li><li>Python</li><li>JavaScript / TS</li><li>Go</li>
+          </ul>
+        </div>
+        <div class="skill-card glass reveal">
+          <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+          <h4>Cloud &amp; Infra</h4>
+          <ul>
+            <li>Google Cloud</li><li>Kubernetes</li><li>Spanner</li><li>BigQuery</li><li>SRE practices</li>
+          </ul>
+        </div>
+        <div class="skill-card glass reveal">
+          <div class="skill-icon"><i class="fas fa-bolt"></i></div>
+          <h4>Performance</h4>
+          <ul>
+            <li>Profiling</li><li>Caching</li><li>Network tuning</li><li>Edge delivery</li><li>Benchmarking</li>
+          </ul>
+        </div>
+        <div class="skill-card glass reveal">
+          <div class="skill-icon"><i class="fas fa-brain"></i></div>
+          <h4>ML &amp; Data</h4>
+          <ul>
+            <li>scikit-learn</li><li>LightGBM</li><li>Pandas</li><li>Feature engineering</li><li>Kaggle</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience timeline -->
+    <section id="experience" class="section">
+      <div class="section-head reveal">
+        <span class="eyebrow"><span class="eyebrow-line"></span>Experience</span>
+        <h2>The path so far</h2>
+      </div>
+
+      <ol class="timeline">
+        <li class="timeline-item reveal">
+          <div class="timeline-dot"><i class="fab fa-google"></i></div>
+          <div class="timeline-card glass">
+            <div class="timeline-meta">
+              <span class="timeline-when">Now</span>
+              <span class="timeline-where">Google Cloud · Performance</span>
+            </div>
+            <h3>Software Engineer — Client-side Performance</h3>
+            <p>Designing and shipping client-side optimizations that reduce latency for Google Cloud customers. Working across tooling, SDKs, and developer experience.</p>
+          </div>
+        </li>
+        <li class="timeline-item reveal">
+          <div class="timeline-dot"><i class="fas fa-shield-halved"></i></div>
+          <div class="timeline-card glass">
+            <div class="timeline-meta">
+              <span class="timeline-when">Year 1</span>
+              <span class="timeline-where">Google Cloud · SRE</span>
+            </div>
+            <h3>Software Engineer — Site Reliability</h3>
+            <p>Built planet-scale infrastructure powering Google Cloud's industry-leading reliability. Focused on automation, monitoring, and graceful failure modes.</p>
+          </div>
+        </li>
+        <li class="timeline-item reveal">
+          <div class="timeline-dot"><i class="fas fa-graduation-cap"></i></div>
+          <div class="timeline-card glass">
+            <div class="timeline-meta">
+              <span class="timeline-when">Earlier</span>
+              <span class="timeline-where">Internships &amp; programs</span>
+            </div>
+            <h3>Google SPS, Internships, Hackathons</h3>
+            <p>Software Product Sprint with Google, robotics competitions, BattleSnake nationals, and a heap of side projects that taught me to ship.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="section-head reveal">
+        <span class="eyebrow"><span class="eyebrow-line"></span>Selected work</span>
+        <h2>Projects I'm proud of</h2>
+        <p class="section-sub">A small sample — from ML on real-world data to autonomous AI snakes.</p>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card glass reveal" data-tilt>
+          <a class="project-media" href="https://github.com/faesalm/Loan-Default" target="_blank" rel="noopener" aria-label="View Loan Default Risk Analysis on GitHub">
+            <img src="images/thumbs/loans.jpg" alt="" loading="lazy" />
+            <span class="project-glow"></span>
+          </a>
+          <div class="project-body">
+            <div class="project-tags">
+              <span>Machine Learning</span>
+              <span>Python</span>
+              <span>LightGBM</span>
+            </div>
+            <h3>Loan Default Risk Analysis</h3>
+            <p>A machine learning model that predicts loan repayment risk using Kaggle's Home Credit dataset. We applied feature engineering, LightGBM, and grid search optimization to land at <strong>75% prediction accuracy</strong> — within a few points of the top of the leaderboard.</p>
+            <a href="https://github.com/faesalm/Loan-Default" class="project-link" target="_blank" rel="noopener">
+              <span>View on GitHub</span>
+              <i class="fas fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card glass reveal" data-tilt>
+          <a class="project-media" href="https://github.com/codeu-spring-2019-team-36/codeu-starter-project" target="_blank" rel="noopener" aria-label="View Google SPS project on GitHub">
+            <img src="images/thumbs/CodeU.jpg" alt="" loading="lazy" />
+            <span class="project-glow"></span>
+          </a>
+          <div class="project-body">
+            <div class="project-tags">
+              <span>Google SPS</span>
+              <span>Java</span>
+              <span>Cloud Datastore</span>
+            </div>
+            <h3>Google Software Product Sprint</h3>
+            <p>An invite-only 11-week program at Google. My team built a web app for finding compatible roommates with Java, JavaScript, and Cloud Datastore — collaborating with Googlers to learn production-grade engineering practices. I later returned as a panelist for the next cohort.</p>
+            <a href="https://github.com/codeu-spring-2019-team-36/codeu-starter-project" class="project-link" target="_blank" rel="noopener">
+              <span>View on GitHub</span>
+              <i class="fas fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card glass reveal" data-tilt>
+          <a class="project-media" href="https://github.com/faesalm/battlesnake_2019" target="_blank" rel="noopener" aria-label="View BattleSnake project on GitHub">
+            <img src="images/thumbs/battlesnake.png" alt="" loading="lazy" />
+            <span class="project-glow"></span>
+          </a>
+          <div class="project-body">
+            <div class="project-tags">
+              <span>AI</span>
+              <span>Algorithms</span>
+              <span>Hackathon</span>
+            </div>
+            <h3>BattleSnake — National Hackathon</h3>
+            <p>A competitive AI snake that defeated bounty snakes built by industry sponsors at Canada's national BattleSnake hackathon. It plays defensively in crowded boards, takes calculated risks late game, and uses graph coloring to predict whether it's about to trap itself.</p>
+            <a href="https://github.com/faesalm/battlesnake_2019" class="project-link" target="_blank" rel="noopener">
+              <span>View on GitHub</span>
+              <i class="fas fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card glass reveal" data-tilt>
+          <a class="project-media" href="https://github.com/faesalm/ENGR-120" target="_blank" rel="noopener" aria-label="View Engineering Robotics Competition on GitHub">
+            <img src="images/thumbs/robot.jpg" alt="" loading="lazy" />
+            <span class="project-glow"></span>
+          </a>
+          <div class="project-body">
+            <div class="project-tags">
+              <span>Robotics</span>
+              <span>RobotC</span>
+              <span>Competition</span>
+            </div>
+            <h3>Engineering Robotics Competition</h3>
+            <p>A semester-long autonomous robotics challenge: design a rover that tethers cables to IR beacons, prototyping a system for underwater internet cable laying. Our robot was the <strong>fastest in the competition</strong>, with dynamic speed control and precise motor balancing.</p>
+            <a href="https://github.com/faesalm/ENGR-120" class="project-link" target="_blank" rel="noopener">
+              <span>View on GitHub</span>
+              <i class="fas fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="contact-card glass reveal">
+        <div class="contact-glow"></div>
+        <span class="eyebrow"><span class="eyebrow-line"></span>Contact</span>
+        <h2>Let's build something good.</h2>
+        <p>Whether it's a hard performance problem, an interesting side project, or just a chat about systems design — my inbox is always open.</p>
+
+        <div class="contact-actions">
+          <a href="mailto:faesalmurad@gmail.com" class="btn btn-primary">
+            <i class="fas fa-envelope"></i>
+            <span>Say hello</span>
+          </a>
+          <a href="https://www.linkedin.com/in/faesalmurad/" class="btn btn-ghost" target="_blank" rel="noopener">
+            <i class="fab fa-linkedin-in"></i>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://github.com/faesalm" class="btn btn-ghost" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-brand">
+        <span class="brand-dot"></span>
+        Faesal Murad
+      </span>
+      <span class="footer-meta">© <span id="year"></span> · Crafted with care.</span>
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/faesalmurad/" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/faesalm" aria-label="GitHub" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+        <a href="mailto:faesalmurad@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>
