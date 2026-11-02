@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Faesal Murad</title>
-  <meta name="description" content="Faesal Murad, Senior Software Engineer and Tech Lead at Google in New York.">
-  <link rel="stylesheet" href="assets/css/main.css?v=4">
+  <meta name="description" content="Faesal Murad, Senior Software Engineer and Technical Lead at Google in New York.">
+  <link rel="stylesheet" href="assets/css/main.css?v=5">
 </head>
 <body>
   <main>
@@ -21,11 +21,11 @@
       <a href="mailto:faesalmurad@gmail.com">Email</a>
       <a href="https://www.linkedin.com/in/faesalmurad/">LinkedIn</a>
       <a href="https://github.com/faesalmurad">GitHub</a>
-      <a href="FaesalMuradResume.pdf?v=2026">Resume (PDF)</a>
+      <a href="FaesalMuradResume.pdf?v=2026-11">Resume (PDF)</a>
     </nav>
 
     <section>
-      <p>I'm a tech lead on the Google Cloud Console, where I work on navigation, cross-product discoverability, and AI agents that bring contextual help into Google Cloud.</p>
+      <p>I'm a technical lead on the Google Cloud Console. I design the platform GCP product teams use to plug into new AI experiences, and I lead work on agentic workflows for Google Cloud.</p>
     </section>
 
     <section>
@@ -33,26 +33,41 @@
 
       <div class="job">
         <div class="job-head">
-          <h3>Senior Software Engineer, Tech Lead</h3>
-          <span class="dates">2022 – Present</span>
+          <h3>Senior Software Engineer, Technical Lead</h3>
+          <span class="dates">Sep 2024 – Present</span>
         </div>
         <p class="org">Google, New York</p>
         <ul>
-          <li>Lead a team of four engineers on GCP Console navigation and cross-product discoverability, and set the long-term direction with Product and UX.</li>
-          <li>Build AI agents with Kotlin, Google ADK, and Python to provide contextual help in Google Cloud.</li>
-          <li>Designed a multi-tier GraphQL caching layer in Java, used across Google Cloud applications, reducing latency by 5%.</li>
-          <li>Ran a three-week quality sprint that raised test coverage by 30% and cut tech debt by 20%; built a Go CLI that automatically fixes common developer blockers.</li>
+          <li>Designed and own the architecture for a shared integration platform that lets every GCP product team plug into a new AI experience; now consolidating similar experiences in existing products onto it.</li>
+          <li>Leading two senior engineers to take agentic GCP workflows from zero to one, setting up model evals and agent infrastructure in Kotlin, Python, and Google ADK.</li>
+          <li>Led a team of four engineers owning the Console shell for all GCP products, improving reliability, theming infrastructure, and cross-product navigation.</li>
+          <li>Defined the GCP Console's long-term vision with Product and UX: moving from rigid standards to modular infrastructure that lets teams customize their shell while keeping one unified experience.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-head">
+          <h3>Software Engineer III</h3>
+          <span class="dates">Sep 2022 – Sep 2024</span>
+        </div>
+        <p class="org">Google, New York</p>
+        <ul>
+          <li>Built a multi-tier GraphQL caching layer with persisted queries in Java as a platform feature used across all of GCP, shrinking JS bundles and cutting request latency by 5%.</li>
+          <li>Developed a Go CLI tool that automatically diagnoses and fixes frequent development blockers, improving developer productivity.</li>
+          <li>Ran a three-week quality sprint that raised test coverage by 30% and cut tech debt by 20%.</li>
+          <li>Hosted three SWE interns across separate cycles, scoping and guiding projects that built modular frameworks for in-product experiences in GCP. All three returned full-time.</li>
         </ul>
       </div>
 
       <div class="job">
         <div class="job-head">
           <h3>Software Engineer, Site Reliability</h3>
-          <span class="dates">2021</span>
+          <span class="dates">Jan 2021 – Sep 2022</span>
         </div>
         <p class="org">Google, Sunnyvale</p>
         <ul>
-          <li>Built monitoring for Virtual Private Clouds and onboarded global services to the control plane.</li>
+          <li>Developed new VM-to-VM communication features for Google Cloud's control plane to support internal products on different stacks, which let an internal product shut down its own GCP fork.</li>
+          <li>Built Python tools that pinpoint root causes during VPC networking incidents, cutting on-call response time; adopted by the full on-call team.</li>
         </ul>
       </div>
 
@@ -84,14 +99,23 @@
       <div class="job">
         <div class="job-head">
           <h3>University of Victoria</h3>
+          <span class="dates">Dec 2020</span>
         </div>
-        <p class="org">B.Sc. Computer Science, with Distinction &middot; 3.8 GPA, Dean's List</p>
+        <p class="org">B.Sc. Computer Science, with Distinction &middot; 3.8/4.0 GPA, Dean's List</p>
+        <ul>
+          <li>Undergraduate research in parallel skyline groups computation.</li>
+        </ul>
       </div>
     </section>
 
     <section>
-      <h2>Languages</h2>
-      <p>Go, Python, Java, Kotlin, C++, TypeScript, JavaScript, SQL, Bash</p>
+      <h2>Skills</h2>
+      <dl class="skills">
+        <dt>Languages</dt>
+        <dd>Go, Python, Java, Kotlin, C++, C, Bash, SQL, TypeScript, JavaScript</dd>
+        <dt>Frameworks and tools</dt>
+        <dd>Google ADK, GraphQL, gRPC, Stubby, Google Pub/Sub, Datastore, App Engine, Docker, Git, React</dd>
+      </dl>
     </section>
   </main>
 </body>

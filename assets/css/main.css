@@ -114,3 +114,19 @@ li + li { margin-top: 4px; }
   .job-head { flex-direction: column; gap: 0; }
 }
 .nowrap { white-space: nowrap; }
+
+.skills {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 8px 24px;
+  margin: 0;
+}
+
+.skills dt { color: var(--muted); }
+
+.skills dd { margin: 0; min-width: 0; }
+
+@media (max-width: 520px) {
+  .skills { grid-template-columns: 1fr; gap: 0; }
+  .skills dd + dt { margin-top: 12px; }
+}
